@@ -9,3 +9,10 @@
 * BEMとかSassは無理に使わなくて良い。（使いたかったらご自由にどうぞ）
 * 必要なファイルやフォルダは自分で作ってね。
 * 出来んところは調べるか聞くこと。（極力自力で解決）
+
+## 担当
+自分の担当のHTML、CSSをやる。
+* 坂上(index, vendor_registration)
+* 柴田(market_registration, market_entry)
+* 清水(market_entry_info, shop-info)
+* 櫻井(vacant-stores, empty_shop_registration, JavaScript)
