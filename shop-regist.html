@@ -12,47 +12,70 @@
 <!-- 商店街オーナー登録の画面 -->
 
 <body>
-    <div class="meter blue"></div>
-    <button class="prev">戻る</button>
-    <div class="slideshow shop">
-        <div class="slideContent gender">
-            <p>性別</p>
-            <button class="btn">男性</button>
-            <button class="btn">女性</button>
-        </div>
+    <main class="main shop-regist">
+        <div class="meter blue"></div>
+        <img src="./images/allow.svg" alt="戻る矢印" class="prev">
+        <div class="slideshow shop">
+            <div class="slideContent birthday">
+                <h2 class="slideContent__ttl">あなたの生年月日を<br>教えてくだい</h2>
+                <form>
+                    <input type="date" id="input-area" name="birthdate">
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent birthday">
-            <p>生年月日</p>
-            <p>200x年x月x日</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent name">
+                <h2 class="slideContent__ttl">あなたの名前を<br>教えて下さい</h2>
+                <form>
+                    <input type="text" id="input-area" name="name" placeholder="例:山田 太郎" required>
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent name">
-            <p>名前</p>
-            <p>○○ ○○</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent info">
+                <h2 class="slideContent__ttl">あなたの所属する<br>商店街をおしえてください</h2>
+                <h3 class="shop-name">商店街</h3>
+                <form>
+                    <input type="text" id="input-area" name="shop" placeholder="例:○○商店街" required>
+                </form>
+                <h3 class="shop-address">商店街の住所</h3>
+                <form>
+                    <input type="text" id="input-area" name="address" placeholder="例:愛知県名古屋市中村区0-0-0" required>
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent job">
-            <p>所属する商店街</p>
-            <p>商店街</p>
-            <p>商店街の住所</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent contact">
+                <h2 class="slideContent__ttl">商店街のお問合せ先を<br>入寮してください</h2>
+                <h3 class="shop-tel">電話番号</h3>
+                <form>
+                    <input type="text" id="input-area" name="tel" placeholder="例:000-0000-0000" required>
+                </form>
+                <h3 class="shop-mail">メールアドレス</h3>
+                <form>
+                    <input type="text" id="input-area" name="mail" placeholder="例:愛知県名古屋市中村区0-0-0" required>
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent job">
-            <p>商店街のお問い合わせ先<br>を入力してください</p>
-            <p>電話番号</p>
-            <p>メールアドレス</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent password">
+                <h2 class="slideContent__ttl">商店街のパスワードを<br>入力してください</h2>
+                <p class="supplement">アプリ用に事前に伝えられている<br>商店街のパスワードを入力してください</p>
+                <h3 class="shop-pass">パスワード</h3>
+                <form>
+                    <input type="text" id="input-area" name="password" placeholder="例:xxxxxxxxx" required>
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent">
-            <p>登録完了</p>
-            <p>始めましょう</p>
-            <button class="next">始める</button>
+            <div class="slideContent complet">
+                <h2 class="slideContent__ttl">登録完了!</h2>
+                <p class="supplement">気になる条件の商店街を<br>お気に入り登録してみましょう</p>
+                <img src="./images/kennsaku_blue.svg" alt="アイコン" class="icon">
+                <a href="./vacant-vue.html" class="next">はじめる</a>
+            </div>
         </div>
-    </div>
+    </main>
     <script src="./js/shop-regist.js"></script>
 </body>
 
