@@ -5,10 +5,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>アプリ制作</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+  <link rel="stylesheet" href="./style/index/index.css">
 </head>
 
+<!-- 起動画面〜性別選択まで-->
+
 <body>
-  <!-- 起動画面と出店者or商店街の部分までを書いていく-->
+  <main class="main">
+    <!--
+      ロゴの表示
+    -->
+    <!-- <div class="logo">ロゴ</div> -->
+
+    <!-- メインのコンテンツ -->
+    <div class="contents">
+      <div class="logo_icon">ロゴ</div>
+      <h1 class="ttl">アプリ名</h1>
+      <h2 class="subt_tl">出店したい人と空き店舗を<br>つなぐアプリ</h2>
+      <div class="google_flex">
+        <div class="google_icon"></div>
+        <p class="google">Googleでログイン</p>
+      </div>
+    </div>
+    <!-- 出店者or商店街 -->
+    <section class="select">
+      <p class="question">あなたはどちらに<br>当てはまりますか？</p>
+      <a href="exhibitor-regist.html" class="flex btn">
+        <p class="exhibitor">出店したい方</p>
+      </a>
+      <a href="shop-regist.html" class="flex btn">
+        <p class="shop">商店街オーナー</p>
+      </a>
+    </section>
+  </main>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
