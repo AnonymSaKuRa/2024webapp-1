@@ -11,8 +11,9 @@
 * 出来んところは調べるか聞くこと。（極力自力で解決）
 
 ## 担当
-自分の担当のHTML、CSSをやる。
-* 坂上(index, vendor_registration)
-* 柴田(market_registration, market_entry)
-* 清水(market_entry_info, shop-info)
-* 櫻井(vacant-stores, empty_shop_registration, JavaScript)
+HTMLは進めてあるので確認しながらCSSを書いていく。
+足りないところは自分で補いながらやる。
+* 坂上(index, shop-regist)
+* 柴田(exhibitor-info, exhibitor-regist)
+* 清水(shop-info, stall-all)
+* 櫻井(vacant-vue, profile, 登録画面の動きの実装)
