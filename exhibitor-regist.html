@@ -12,57 +12,83 @@
 <!-- 出店者登録の画面 -->
 
 <body>
-    <div class="meter orange"></div>
-    <button class="prev">戻る</button>
-    <div class="slideshow">
-        <div class="slideContent gender">
-            <p>性別</p>
-            <button class="btn">男性</button>
-            <button class="btn">女性</button>
-        </div>
+    <main class="main">
+        <div class="meter orange"></div>
+        <img src="./images/allow.svg" alt="戻る矢印" class="prev">
+        <div class="slideshow">
+            <div class="slideContent birthday">
+                <h2 class="slideContent__ttl">あなたの生年月日を<br>教えてくだい</h2>
+                <form>
+                    <input type="date" id="birthdate" name="birthdate">
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent birthday">
-            <p>生年月日</p>
-            <p>200x年x月x日</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent name">
+                <h2 class="slideContent__ttl">あなたの名前を<br>教えて下さい</h2>
+                <form>
+                    <input type="text" id="input-area" name="name" placeholder="例:山田 太郎" required>
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent name">
-            <p>名前</p>
-            <p>○○ ○○</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent job">
+                <h2 class="slideContent__ttl">あなたの職業を<br>教えて下さい</h2>
+                <form>
+                    <input type="text" id="input-area" name="job" placeholder="例:会社員" required>
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent job">
-            <p>職業</p>
-            <p>会社員</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent shop">
+                <h2 class="slideContent__ttl">どんなお店を<br>出店したいですか？</h2>
+                <p class="supplement">例：スイーツが美味しいカフェ、<br>女性向けの古着屋など</p>
+                <form>
+                    <input type="text" id="input-area" name="shop" placeholder="例:スイーツが美味しいカフェ" required>
+                </form>
+                <p class="supplement right">を開きたい！</p>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent job">
-            <p>どんなお店</p>
-            <p>飲食店</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent area">
+                <h2 class="slideContent__ttl">どの地域で<br>出店したいですか?</h2>
+                <p class="supplement">複数選択可能です。</p>
+                <h3 class="area-name">中部地方</h3>
+                <div class="flex">
+                    <p class="select">新潟県</p>
+                    <p class="select">富山県</p>
+                    <p class="select">石川県</p>
+                    <p class="select">福井県</p>
+                    <p class="select">山梨県</p>
+                    <p class="select">長野県</p>
+                    <p class="select">岐阜県</p>
+                    <p class="select">静岡県</p>
+                    <p class="select">愛知県</p>
+                </div>
 
-        <div class="slideContent job">
-            <p>どの地域でやりたいか</p>
-            <p>東海地方</p>
-            <button class="next">次へ</button>
-        </div>
+                <h3 class="area-name">その他</h3>
+                <div class="flex">
+                    <p class="select">未定</p>
+                </div>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent job">
-            <p>経験・資格</p>
-            <p>アルバイトなど</p>
-            <button class="next">次へ</button>
-        </div>
+            <div class="slideContent experience">
+                <h2 class="slideContent__ttl">あなたの経験・資格を<br>教えてください</h2>
+                <form>
+                    <input type="text" id="input-area" name="experience" placeholder="例:飲食店勤務経験ありなど" required>
+                </form>
+                <p class="next">次へ</p>
+            </div>
 
-        <div class="slideContent">
-            <p>登録完了</p>
-            <p>始めましょう</p>
-            <button class="next">始める</button>
+            <div class="slideContent complet">
+                <h2 class="slideContent__ttl">登録完了!</h2>
+                <p class="supplement">気になる条件の商店街を<br>お気に入り登録してみましょう</p>
+                <img src="./images/tennpo_orange.svg" alt="アイコン" class="icon">
+                <a href="./vacant-vue.html" class="next">はじめる</a>
+            </div>
         </div>
-    </div>
+    </main>
     <script src="./js/exhi-regist.js"></script>
 </body>
 

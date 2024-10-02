@@ -13,7 +13,7 @@
 ## 担当
 HTMLは進めてあるので確認しながらCSSを書いていく。
 足りないところは自分で補いながらやる。
-* 坂上(index, shop-regist)
-* 柴田(exhibitor-info, exhibitor-regist)
+* 坂上()
+* 柴田()
 * 清水(shop-info, stall-all)
-* 櫻井(vacant-vue, profile, 登録画面の動きの実装)
+* 櫻井(vacant-vue, profile)

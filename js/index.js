@@ -11,6 +11,7 @@
 // setTimeout(dispOpen, 6000);
 
 const googleBtn = document.querySelector(".google_flex");
+
 googleBtn.addEventListener("click", () => {
     document.querySelector(".contents").classList.add("click_google_btn");
     document.querySelector(".select").classList.add("click_google_btn_active");
